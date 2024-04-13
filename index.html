@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAM1KOU的家</title>
     <style>
-        *{
-            transition-duration: 1s;
+        * {
+            margin: 70px auto;
+            padding: 10px;
+            font-weight: bold;
+            font-family: 楷体, sans-serif;
         }
-        *:hover{
-            transform: translateY(10px);
+
+        .super_button {
+            transition-duration: 1s;
+            display: block;
+            background-color: white;
+            text-align: center;
+            border: solid;
+            border-radius: 10px;
+            width: 700px;
+            filter: blur(1px) opacity(30%);
+        }
+
+        .super_button:hover {
+            background-color: yellow;
+            transform: translateY(-10px);
+            filter: none;
+        }
+
+        .super_button>* {
+            color: black;
+            font-size: 1cm;
+        }
+
+        .rotating_box {
+            color: white;
+            transition-duration: 1s;
+            width: max-content;
+            font-size: 1cm;
+            text-align: center;
+            transition-duration: 10s;
+        }
+
+        .rotating_box:hover {
+            transform: rotate(9000deg);
         }
     </style>
 </head>
-<body background="/164298-shu_ma_yi_shu-yi_shu-yi_shu_jia-fa_xing-ka_tong-x750.jpg"
-style="background-repeat: no-repeat;
+
+<body style="background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: 100% 100%; ">
-     <div>
-		<h1 style="text-align: center; transition-duration: 10s; margin: 1cm;" onmouseover="this.style.transform='rotate(9000deg)'" onmouseout="this.style.transform='rotate(-9000deg)'">我要坐电梯</h1>
-    </div>
-    <div style="height: 100%; text-align: center;">
-        <a style="color:white; font-size: 1cm;" href="https://www.bilibili.com/blackboard/fe/activity-HQjQSdd3L8.html">风叶穿行</a>
-    </div>
-    <div style="height: 100%; text-align: center;">
-        <a style="color:white; font-size: 1cm;" href="https://github.com/youhuangla/Note/blob/main/web/github.md">github网站资源库 by youhuangla</a>
-    </div>
-    <div style="height: 100%; text-align: center;">
-        <a style="color:white; font-size: 1cm;" href="https://yuansaysay.github.io/vueMusicPlayer/">Music</a>
-    </div>
-    <div style="height: 100%; text-align: center;">
-        <a style="color:white; font-size: 1cm;" href="https://www.4kbizhi.com/donman/">壁纸</a>
-    </div>
+background-size: 100% 100%;">
+    <img src="res-img1.jpg" style="margin: 0; padding: 0; filter: blur(1px); z-index: -1; width: 100%; height: 100%; position: fixed; top: 0;" alt="?"></img>
+    
+    <div class="rotating_box">我要坐电梯</div>
+
+    <button class="super_button" style="height: 100%; text-align: center;">
+        <a href="https://www.bilibili.com/blackboard/fe/activity-HQjQSdd3L8.html">风叶穿行</a>
+    </button>
+
+    <button class="super_button" style="height: 100%; text-align: center;">
+        <a href="https://github.com/youhuangla/Note/blob/main/web/github.md">github网站资源库 by youhuangla</a>
+        </div>
+
+        <button class="super_button" style="height: 100%; text-align: center;">
+            <a href="https://yuansaysay.github.io/vueMusicPlayer/">Music</a>
+            </div>
+
+            <button class="super_button" style="height: 100%; text-align: center;">
+                <a href="https://www.4kbizhi.com/donman/">壁纸</a>
+            </button>
 </body>
+
 </html>
