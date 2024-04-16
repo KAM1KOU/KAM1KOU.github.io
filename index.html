@@ -91,8 +91,87 @@
 
     <main class="global_main global_align"
         style="margin-top: 100px; width: 90%; backdrop-filter: blur(10px); border: solid transparent; border-radius: 50px; box-shadow: 0 0 30px skyblue;">
-        <div class="rotating_box global_align global_text">我要坐电梯</div>
+        <div class="rotating_box global_align global_text">KAMIKOU'S HOME</div>
 
+        <canvas id="cans" width="1000px" height="1000px">asda</canvas>
+    </canvas>
+    <script>
+        var canvas = document.getElementById('cans')
+        var ctx = canvas.getContext('2d')
+        ctx.lineWidth = '5'
+        ctx.arc(500,100,38,0,2*Math.PI,false)
+        ctx.stroke()
+        
+        ctx.beginPath()
+            ctx.lineWidth = '10'
+            ctx.moveTo(500,140)
+            ctx.lineTo(500,160)
+            ctx.stroke()
+        
+        ctx.beginPath()
+            ctx.lineWidth = '30'
+            ctx.moveTo(500,160)
+            ctx.lineTo(500,290)
+            ctx.stroke()
+        
+        ctx.beginPath()
+            ctx.lineWidth = '30'
+            ctx.moveTo(500,160)
+            ctx.lineTo(500,290)
+            ctx.stroke()
+    
+        ctx.beginPath()
+            ctx.lineWidth = '2'
+            ctx.fillStyle='yellow'
+            ctx.moveTo(450,230)
+            ctx.lineTo(450,280)
+            ctx.lineTo(550,280)
+            ctx.lineTo(550,230)
+            ctx.fill()
+            ctx.closePath()
+            ctx.stroke() 
+        
+        ctx.beginPath()
+            ctx.lineWidth = '8'
+            ctx.moveTo(510,165)
+            ctx.lineTo(552,225)
+            ctx.lineTo(500,270)
+            ctx.stroke()
+        
+        ctx.beginPath()
+            ctx.lineWidth = '5'
+            ctx.arc(500,270,10,0,2*Math.PI,false)
+            ctx.fillStyle = 'black'
+            ctx.fill()
+            ctx.stroke()
+    
+        ctx.beginPath()
+            ctx.lineWidth = '10'
+            ctx.moveTo(500,285)
+            ctx.lineTo(480,450)
+            ctx.stroke()
+    
+        ctx.beginPath()
+            ctx.lineWidth = '10'
+            ctx.moveTo(500,285)
+            ctx.lineTo(520,450)
+            ctx.stroke()
+    
+        ctx.beginPath()
+            ctx.lineWidth = '5'
+            ctx.arc(466,450,15,1.0*Math.PI,2*Math.PI,false)
+            ctx.closePath()
+            ctx.stroke()
+    
+        ctx.beginPath()
+            ctx.lineWidth = '5'
+            ctx.arc(506,450,15,1.0*Math.PI,2*Math.PI,false)
+            ctx.closePath()
+            ctx.stroke()
+                  
+            </script>
+        
+        
         <button class="global_button global_align global_border">
             <a class="global_align global_text"
                 href="https://www.bilibili.com/blackboard/fe/activity-HQjQSdd3L8.html">风叶穿行</a>
@@ -152,4 +231,5 @@
             <a class="global_align global_text"
                 href="https://www.aigei.com/">爱给网</a>
         </button>
+        
 
